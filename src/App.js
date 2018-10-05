@@ -10,6 +10,7 @@ import Principal from './Principal.js';
 import Onboarding from './Onboarding.js';
 import Creado from './Creado.js';
 import Terminar from './Terminar.js';
+import Mensajeriapost from './Mensajeriapost.js';
 
 export default class ResourceListExample extends React.Component {
   state = {
@@ -93,6 +94,7 @@ export default class ResourceListExample extends React.Component {
     return (
 
       <div style={{width:'90em',height:'50em',padding:'5em'}}>
+      <Mensajeriapost></Mensajeriapost>
       <Terminar></Terminar>
       <Creado></Creado>
         <Onboarding></Onboarding>
