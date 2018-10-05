@@ -24,7 +24,7 @@ export default class ResourceListExample extends React.Component {
   renderItem = (item) => {
     const {id, url, name, location} = item;
     const media = <Avatar customer size="medium" name={name} />;
-
+// prueba 
     return (
       <ResourceList.Item
         id={id}
