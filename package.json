@@ -4,10 +4,17 @@
   "private": true,
   "dependencies": {
     "@shopify/polaris": "^2.10.0",
+    "antd": "^3.10.0",
+    "fixed-data-table-2": "^1.0.0-beta.5",
+    "func": "^0.1.0",
     "react": "^16.5.2",
+    "react-admin": "^2.3.3",
+    "react-bootstrap-table": "^4.3.1",
     "react-dom": "^16.5.2",
     "react-scripts": "1.1.5",
-    "react-tabs": "^2.3.0"
+    "react-tabs": "^2.3.0",
+    "react-taco-table": "^0.5.1",
+    "react-virtualized": "^9.20.1"
   },
   "scripts": {
     "start": "react-scripts start",

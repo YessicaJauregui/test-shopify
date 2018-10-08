@@ -1,60 +1,66 @@
 import React from 'react';
-import {Card, DataTable, Page} from '@shopify/polaris';
+import { TacoTable, DataType, SortDirection, Formatters } from 'react-taco-table';
+import cellLinesData from '../data/cell_lines.json';
 
-export default class DataTableExample extends React.Component {
+/**
+ * An example demonstrating how to use column groups without headers
+ */
+
+const columns = [
+  {
+    id: 'name',
+    value: rowData => rowData.cellLine,
+    header: 'Cell Line',
+    renderer: cellData => <b>{cellData.label}</b>,
+    sortValue: cellData => cellData.label,
+    type: DataType.String,
+    width: 250,
+  },
+  {
+    id: 'receptorStatus',
+    header: 'Receptor Status',
+    renderer: cellData => cellData.label,
+    sortValue: cellData => cellData.label,
+    type: DataType.String,
+  },
+  {
+    id: 'MLL3',
+    type: DataType.String,
+  },
+  {
+    id: 'value',
+    type: DataType.Number,
+    renderer: Formatters.plusMinusFormat(1),
+    firstSortDirection: SortDirection.Ascending,
+  },
+  {
+    id: 'rating',
+    type: DataType.Number,
+    renderer: Formatters.plusMinusFormat(2),
+  },
+  {
+    id: 'level',
+    type: DataType.NumberOrdinal,
+  },
+];
+
+const columnGroups = [
+  { columns: ['name', 'receptorStatus']  },
+  { columns: ['value', 'rating', 'level'] },
+];
+
+class ExampleColumnGroups extends React.Component {
   render() {
-    const rows = [
-      ['Emerald Silk Gown', '$875.00', '124689', '140', '$122,500.00','213','aaaa','jsj','asadad','sdsd','sdfdf','sdfdff','sdfdff','sfdff','sdfdf'],
-      ['Emerald Silk Gown', '$875.00', '124689', '140', '$122,500.00','213','aaaa','jsj','asadad','sdsd','sdfdf','sdfdff','sdfdff','sfdff','sdfdf'],
-      [
-'Emerald Silk Gown', '$875.00', '124689', '140', '$122,500.00','213','aaaa','jsj','asadad','sdsd','sdfdf','sdfdff','sdfdff','sfdff','sdfdf'
-      ],
-    ];
-
     return (
-      <Page title="Sales by product">
-        <Card>
-          <DataTable
-            columnContentTypes={[
-              'text',
-              'text',
-              'text',
-              'text',
-              'text',
-              'text',
-              'text',
-              'text',
-              'text',
-              'text',
-              'text',
-              'text',
-              'text',
-              'text',
-              'text',
-            ]}
-            headings={[
-              'Subir cambios a Mercado Libre',
-              'SKU',
-              'Titulo en Mercado Libre',
-              'Status',
-              'Exposicion',
-              'Categoria UML',
-              'Precio WooCommerce',
-              'Precio Mercado Libre',
-              'Inventario WooCommerce',
-              'Inventario Mercado Libre',
-              'Tipo de envio',
-              'Costo de envio en Mercado Libre',
-              'Comision de Mercado Libre',
-              'Ver publicación',
-              'Ultima Actualizacion',
-
-            ]}
-            rows={rows}
-
-          />
-        </Card>
-      </Page>
+      <TacoTable
+        columns={columns}
+        columnGroups={columnGroups}
+        data={cellLinesData}
+        striped
+        sortable
+      />
     );
   }
 }
+
+export default ExampleColumnGroups;
