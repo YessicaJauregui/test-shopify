@@ -62,10 +62,10 @@ const columns = [{
   title: 'Inventario MercadoLibre',
   dataIndex: 'address12',
 },{
-  title: 'Tipo de Envio',
+  title: 'Tipo de Envío',
   dataIndex: 'address6',
 },{
-  title: 'Costo de Envio en Mercado Libre',
+  title: 'Costo de Envío en Mercado Libre',
   dataIndex: 'address7',
 },{
   title: 'Comisión de Mercado Libre',
@@ -174,52 +174,51 @@ class App extends React.Component {
       onChange: this.onSelectedRowKeysChange,
     };
     return (
-      <div style={{width:'90em',height:'50em',padding:'5em'}}>
+
+<div style={{width:'90em',height:'50em',padding:'5em'}}>
 <div style={{padding:'5px'}}>
       <Final></Final>
       </div>
      <Mensajeriapost></Mensajeriapost>
      <Terminar></Terminar>
      <Creado></Creado>
-       <Onboarding></Onboarding>
+     <Onboarding></Onboarding>
      <Principal></Principal>
-
      <Bienvenida></Bienvenida>
-<Ordenes></Ordenes>
+     <Ordenes></Ordenes>
 
-     <div style={{padding:'10px',height:'10px'}}>
-     <Flechas></Flechas>
-   <Desplegable></Desplegable>
+
+<div style={{padding:'10px',height:'10px'}}>
+ <Flechas></Flechas>
+ <Desplegable></Desplegable>
  <Desplegable2></Desplegable2>
  <Button >Modificar Descripción</Button>
  <Button >Modificar Atributos</Button>
  <Button >Modificar Inventario</Button>
+
+
 <div style={{width:'1000px',marginLeft:'1200px',height:'35px'}}>
  <Field></Field>
  <Mensajetipoenvio></Mensajetipoenvio>
  <Mensajecategoria></Mensajecategoria>
  <MensajePublicacion></MensajePublicacion>
  <Mensajestatus></Mensajestatus>
-
+ </div>
  </div>
 
 
- </div>
-
-  <div style={{width:'210em',height:'420px',overflow:'auto',padding:'10px',background:'white'}}>
-      <Table
-        rowSelection={rowSelection}
-        columns={columns}
-        dataSource={data}
-        onRow={(record) => ({
-          onClick: () => {
-            this.selectRow(record);
+<div style={{width:'210em',height:'420px',overflow:'auto',background:'white'}}>
+  <Table
+  rowSelection={rowSelection}
+  columns={columns}
+  dataSource={data}
+  onRow={(record) => ({
+  onClick: () => {
+  this.selectRow(record);
           },
         })}
       />
-
       </div>
-
     </div>
 
     );

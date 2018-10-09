@@ -29,7 +29,7 @@ export default class ModalExample extends React.Component {
           <Modal.Section>
             <TextContainer>
               <p>
-            ¡LISTO! has logrado subir la publicación de prueba a Mercado Libre
+            ¡LISTO! Has logrado subir la publicación de prueba a Mercado Libre
             con todos los atributos que seleccionaste durante el onboarding.
               </p>
             </TextContainer>

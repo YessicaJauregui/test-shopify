@@ -29,8 +29,8 @@ export default class ModalExample extends React.Component {
           <Modal.Section>
             <TextContainer>
               <p>
-            Ahora asignaremos un valor al status, en caso de que se finalize se debera confirmar
-            ya que para activarlo de nuevo se debera hacer una nueva publicación de Mercado Libre.
+            Ahora asignaremos un valor al status, en caso de que se finalize se deberá confirmar
+            ya que para activarlo de nuevo se deberá hacer una nueva publicación de Mercado Libre.
               </p>
             </TextContainer>
           </Modal.Section>

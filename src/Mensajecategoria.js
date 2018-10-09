@@ -30,7 +30,7 @@ export default class ModalExample extends React.Component {
             <TextContainer>
               <p>
               La categoria es un atributo que Mercado Libre utiliza para categorizar los productos
-              y hacerlos mas visibles al comprador, asignale una categoria a nuestro producto de prueba para continuar.
+              y hacerlos más visibles al comprador, asignale una categoria a nuestro producto de prueba para continuar.
               </p>
             </TextContainer>
           </Modal.Section>
