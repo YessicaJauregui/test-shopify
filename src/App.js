@@ -12,14 +12,24 @@ import Flechas from './Flechas.js';
 import Desplegable from './Desplegable.js';
 import Desplegable2 from './Desplegable2.js';
 import Field from './Field.js';
-import {Button,Link} from '@shopify/polaris';
+import {Button,Link,InlineError} from '@shopify/polaris';
 import Fild1 from './Fild1.js';
 import Options from './Options.js';
 import Options2 from './Options2';
 import Fieldd from './Fieldd.js';
 import Fieldd2 from './Fieldd2.js';
 import { Table } from 'antd';
-import Options3 from './Options3';
+import Options3 from './Options3.js';
+import Mensajetipoenvio from './Mensajetipoenvio.js';
+import Indicacion from './Indicacion.js';
+import Mensajecategoria from './Mensajecategoria.js';
+import MensajePublicacion from './MensajePublicacion.js';
+import Mensajestatus from './Mensajestatus.js';
+import Indicacion2 from './Indicacion2.js';
+import Final from './Final.js';
+import Indicacion3 from './Indicacion3.js';
+import {BrowserRouter as Router} from 'react-router-dom';
+
 
 const columns = [{
   title: 'Subir cambios a Mercado Libre',
@@ -28,7 +38,7 @@ const columns = [{
   title: 'SKU',
   dataIndex: 'age',
 }, {
-  title: 'Titulo en MercadoLibre ',
+  title:<InlineError message="El título no debe tener mas de 60 caracteres." fieldID="myFieldID" />,
   dataIndex: 'address',
 },{
   title: 'Status',
@@ -58,7 +68,7 @@ const columns = [{
   title: 'Costo de Envio en Mercado Libre',
   dataIndex: 'address7',
 },{
-  title: 'Comision de Mercado Libre',
+  title: 'Comisión de Mercado Libre',
   dataIndex: 'address8',
 },{
   title: 'Ver Publicación',
@@ -165,6 +175,9 @@ class App extends React.Component {
     };
     return (
       <div style={{width:'90em',height:'50em',padding:'5em'}}>
+<div style={{padding:'5px'}}>
+      <Final></Final>
+      </div>
      <Mensajeriapost></Mensajeriapost>
      <Terminar></Terminar>
      <Creado></Creado>
@@ -178,12 +191,21 @@ class App extends React.Component {
      <Flechas></Flechas>
    <Desplegable></Desplegable>
  <Desplegable2></Desplegable2>
-<div style={{width:'363px',marginLeft:'750px',height:'35px'}}>
+ <Button >Modificar Descripción</Button>
+ <Button >Modificar Atributos</Button>
+ <Button >Modificar Inventario</Button>
+<div style={{width:'363px',marginLeft:'750px',height:'35px',padding:'5px'}}>
  <Field></Field>
+ <Mensajetipoenvio></Mensajetipoenvio>
+ <Mensajecategoria></Mensajecategoria>
+ <MensajePublicacion></MensajePublicacion>
+ <Mensajestatus></Mensajestatus>
+
  </div>
 
 
  </div>
+
   <div style={{width:'210em', height:'420px',padding:'0em',overflow:'auto',background:'white'}}>
       <Table
         rowSelection={rowSelection}
@@ -195,8 +217,11 @@ class App extends React.Component {
           },
         })}
       />
+
       </div>
+
     </div>
+
     );
   }
 }
