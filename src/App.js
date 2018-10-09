@@ -38,7 +38,7 @@ const columns = [{
   title: 'SKU',
   dataIndex: 'age',
 }, {
-  title:<InlineError message="El título no debe tener mas de 60 caracteres." fieldID="myFieldID" />,
+  title: <InlineError message="El título no debe tener más de 60 caracteres." fieldID="myFieldID" />,
   dataIndex: 'address',
 },{
   title: 'Status',
@@ -187,14 +187,14 @@ class App extends React.Component {
      <Bienvenida></Bienvenida>
 <Ordenes></Ordenes>
 
-     <div style={{padding:'5px'}}>
+     <div style={{padding:'10px',height:'10px'}}>
      <Flechas></Flechas>
    <Desplegable></Desplegable>
  <Desplegable2></Desplegable2>
  <Button >Modificar Descripción</Button>
  <Button >Modificar Atributos</Button>
  <Button >Modificar Inventario</Button>
-<div style={{width:'363px',marginLeft:'750px',height:'35px',padding:'5px'}}>
+<div style={{width:'1000px',marginLeft:'1200px',height:'35px'}}>
  <Field></Field>
  <Mensajetipoenvio></Mensajetipoenvio>
  <Mensajecategoria></Mensajecategoria>
@@ -206,7 +206,7 @@ class App extends React.Component {
 
  </div>
 
-  <div style={{width:'210em', height:'420px',padding:'0em',overflow:'auto',background:'white'}}>
+  <div style={{width:'210em',height:'420px',overflow:'auto',padding:'10px',background:'white'}}>
       <Table
         rowSelection={rowSelection}
         columns={columns}

@@ -13,10 +13,10 @@ export default class TextFieldExample extends React.Component {
   render() {
     return (
       <TextField
-        label="Smartphone Samsung Galaxy S8 64GB Dorado Maple Desbloqueado"
+        label="Smartphone Samsung Galaxy S8"
         value={this.state.value}
         onChange={this.handleChange}
-        
+
       />
     );
   }
