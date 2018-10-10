@@ -195,7 +195,7 @@ class App extends React.Component {
  <Flechas></Flechas>
  <Desplegable></Desplegable>
  <Desplegable2></Desplegable2>
-<div style={{marginTop:'10em'}}>
+<div style={{padding:'-10px'}}>
  <Button primary>Modificar Descripción</Button>
  <Button primary>Modificar Atributos</Button>
  <Button primary>Modificar Inventario</Button>
