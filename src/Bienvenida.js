@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Label, Select, Tabs,List,Button,Thumbnail,TextField,Link} from '@shopify/polaris';
+import {Card, Tabs,List,Button,Thumbnail,Link} from '@shopify/polaris';
 import Fieldbienvenida from './Fieldbienvenida.js';
 
 export default class TabsExample extends React.Component {
@@ -46,14 +46,15 @@ export default class TabsExample extends React.Component {
     <Tabs.Panel id="all-customers-content">
     <div style={{width:'45em'}}>
    <Card sectioned>
+   <div style={{marginLeft:'180px'}}>
     <Thumbnail
-      source="https://www.marketful.mx/assets/Logo_marketful-b973bdcabe50755f3a07dc2b2fae41c501eecb4e06756215b6735f4fd5616c81.png"
       source="https://pbs.twimg.com/profile_images/1000023174401044480/0Vfde35n_400x400.jpg"
       size="large"
       alt="Black choker necklace"
     />
+    </div>
 
-    <div style={{float:'left',padding:'10px'}}>
+    <div style={{float:'left',padding:'10px',marginLeft:'150px'}}>
 
     <Button primary>Activa tu tienda</Button>
     </div>
@@ -95,7 +96,7 @@ export default class TabsExample extends React.Component {
   <p>Tenemos un Onboarding que concentra las herramientas clave que te
   ayudará a comprender de manera sencilla el funcionamiento de nuestro
   Seller Center da una miradita de manera gratuita.</p>
-  <div style={{padding:'10px'}}>
+  <div style={{padding:'10px',marginLeft:'300px'}}>
   <Button primary>Ir a Onboarding</Button>
   </div>
   </Card>
@@ -103,7 +104,7 @@ export default class TabsExample extends React.Component {
 
   <Card title="Apoyo paso a paso" sectioned>
   <p>Te apoyamos paso a paso para que tu tienda quede espectacular teniendo tus publicaciones de Mercado Libre y shopify para lo cual te apoyamos con una guia completa para que sea sencillo y eficiente para ti controlar tus ventas a travez de nuestra plataforma. ¿Tienes alguna duda? </p>
-  <div style={{padding:'10px'}}>
+  <div style={{padding:'10px',marginLeft:'340px'}}>
   <Button primary>Soporte</Button>
   </div>
   </Card>
@@ -146,26 +147,30 @@ export default class TabsExample extends React.Component {
     <div style={{padding:'15px'}}>
     <p>Dar tus productos de alta es muy sencillo, solo da clic en "Productos" y ahi podras dar un nuevo producto de alta.</p>
     </div>
+    <div style={{padding:'10px',marginLeft:'747px'}}>
   <Button primary>Pruebalo</Button>
-
+</div>
   <Card title="Ahora veremos las opciones" sectioned>Que estan disponibles en la barra de titulo del Seller Center:
   <List.Item>Botones atras y adelante: Estan en la parte superior izquierda y te permiten navegar entre todos tus productos. Cada pantalla te muestra 50 productos, para ver los siguientes puedes presionar siguiente o para regresar puedes dar clic hacia atras.</List.Item>
   <List.Item>Status Masivo: Este boton en conjunto con el checkbox masivo, te permite cambiar el status de uno o muchos productos de una sola vez.</List.Item>
-  <List.Item>Exposicion Masiva: Este boton como el anterior, permite que se cambie masivamente la exposicion de uno o muchos productos de una sola vez.</List.Item>
-  <List.Item>Agregar descripcion general: Este boton te redirige hacia la pantalla en la cual podras asignar una descripcion comun debajo de su descripcion actual a todos los productos.</List.Item>
-  <List.Item>Buscar: La caja de texto en la parte superior derecha de la pantalla te permite ingresar algun nombre de algun producto, dar clic en el boton de la lupa que se encuentra a un lado y te cargara los productos que coincidan con ese nombre en caso de tener alguno.</List.Item>
+  <List.Item>Exposición Masiva: Este boton como el anterior, permite que se cambie masivamente la exposición de uno o muchos productos de una sola vez.</List.Item>
+  <List.Item>Agregar descripción general: Este boton te redirige hacia la pantalla en la cual podras asignar una descripción comun debajo de su descripción actual a todos los productos.</List.Item>
+  <List.Item>Buscar: La caja de texto en la parte superior derecha de la pantalla te permite ingresar algun nombre de algun producto, dar clic en el boton de la lupa que se encuentra a un lado y te cargará los productos que coincidan con ese nombre en caso de tener alguno.</List.Item>
+<div style={{padding:'10px',marginLeft:'730px'}}>
   <Button primary>Pruebalo</Button>
+  </div>
   <div style={{padding:'10px'}}>
-  <p>Modificando la informacion de los productos :</p>
+  <p>Modificando la información de los productos :</p>
   </div>
     <div style={{padding:'10px'}}>
-  <p>Con Marketful cambiar los datos de tus productos de WooCommerce es muy sencillo. Esta es la distribucion de los datos que tiene cada producto:</p>
+  <p>Con Marketful cambiar los datos de tus productos de WooCommerce es muy sencillo. Esta es la distribución de los datos que tiene cada producto:</p>
 </div>
-<div style={{padding:'10px'}}>
+<div style={{padding:'10px',marginLeft:'730px'}}>
+
     <Button primary>Pruebalo</Button>
     </div>
     <div style={{padding:'10px'}}>
-Puedes modificar el Status, la Exposicion, la Categoria, el precio en Mercado Libre, en inventario en Mercado Libre y el tipo de envio. Recuerda que todos los cambios que realizes se guardarán dentro de shopify y se actualizarán en Mercado Libre por lo cual no es necesario realizar dichos cambios en esas aplicaciones tambien.
+Puedes modificar el Status, la Exposición, la Categoria, el precio en Mercado Libre, en inventario en Mercado Libre y el tipo de envio. Recuerda que todos los cambios que realizes se guardarán dentro de shopify y se actualizarán en Mercado Libre por lo cual no es necesario realizar dichos cambios en esas aplicaciones tambien.
 </div>
   <div style={{padding:'10px'}}>
 Al ingresar un nuevo producto es importante recordar que el titulo del mismo debera de ser igual o menor a 60 caracteres, ya que Mercado Libre requiere un titulo de esas dimensiones.

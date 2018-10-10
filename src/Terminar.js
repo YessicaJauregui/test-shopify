@@ -17,8 +17,8 @@ export default class App extends React.Component {
   <p>Si deseas eliminar, el producto será eliminado de manera permanente.
 
 </p>
-<div style={{float:'left', marginTop:'13px'}}>
-<Button primary>Conservar</Button>
+<div style={{float:'left',marginTop:'15px'}}>
+<Button primary size="large">Conservar</Button>
 </div>
 </EmptyState>
   </div>

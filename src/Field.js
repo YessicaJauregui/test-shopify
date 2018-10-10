@@ -14,7 +14,7 @@ export default class TextFieldExample extends React.Component {
     return (
       <TextField
         label=""
-         placeholder="🔍        Titulo  "
+         placeholder="                          Titulo  "
         value={this.state.value}
         onChange={this.handleChange}
       />

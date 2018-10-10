@@ -1,5 +1,5 @@
 import React from 'react';
-import {EmptyState,Button} from '@shopify/polaris';
+import {EmptyState} from '@shopify/polaris';
 
 
 export default class App extends React.Component {

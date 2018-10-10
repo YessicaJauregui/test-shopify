@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import './App.css';
 import 'antd/dist/antd.css';
 import Mensajeriapost from './Mensajeriapost.js';
 import Terminar from './Terminar.js';
@@ -29,7 +29,7 @@ import Indicacion2 from './Indicacion2.js';
 import Final from './Final.js';
 import Indicacion3 from './Indicacion3.js';
 import {BrowserRouter as Router} from 'react-router-dom';
-
+import Disable from './Disable.js';
 
 const columns = [{
   title: 'Subir cambios a Mercado Libre',
@@ -184,21 +184,28 @@ class App extends React.Component {
      <Creado></Creado>
      <Onboarding></Onboarding>
      <Principal></Principal>
+    <div style={{marginTop:'60px'}}>
      <Bienvenida></Bienvenida>
+      </div>
+    <div style={{marginTop:'60px'}}>
      <Ordenes></Ordenes>
+    </div>
 
-
-<div style={{padding:'10px',height:'10px'}}>
+<div style={{padding:'0px',height:'10px',marginTop:'50px'}}>
  <Flechas></Flechas>
  <Desplegable></Desplegable>
  <Desplegable2></Desplegable2>
- <Button >Modificar Descripción</Button>
- <Button >Modificar Atributos</Button>
- <Button >Modificar Inventario</Button>
+<div style={{marginTop:'10em'}}>
+ <Button primary>Modificar Descripción</Button>
+ <Button primary>Modificar Atributos</Button>
+ <Button primary>Modificar Inventario</Button>
+</div>
 
-
-<div style={{width:'1000px',marginLeft:'1200px',height:'35px'}}>
+<div style={{width:'960px',marginLeft:'1975px',marginTop:'-30px'}}>
  <Field></Field>
+ <div style={{width:'45px',marginTop:'-36px',marginLeft:'-3.2em',background:'white'}}>
+ <Disable></Disable>
+ </div>
  <Mensajetipoenvio></Mensajetipoenvio>
  <Mensajecategoria></Mensajecategoria>
  <MensajePublicacion></MensajePublicacion>
@@ -207,7 +214,7 @@ class App extends React.Component {
  </div>
 
 
-<div style={{width:'210em',height:'420px',overflow:'auto',background:'white'}}>
+<div style={{width:'210em',height:'420px',overflow:'auto',background:'white',marginTop:'50px'}}>
   <Table
   rowSelection={rowSelection}
   columns={columns}

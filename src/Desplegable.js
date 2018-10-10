@@ -1,5 +1,5 @@
 import React from 'react';
-import {ActionList, Button, List, Popover} from '@shopify/polaris';
+import {ActionList, Button,  Popover} from '@shopify/polaris';
 
 export default class ActionListExample extends React.Component {
   state = {

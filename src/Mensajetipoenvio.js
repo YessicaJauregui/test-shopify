@@ -1,6 +1,6 @@
 import React from 'react';
-import {Button, Modal, TextContainer} from '@shopify/polaris';
-import App from './App.js';
+import { Modal, TextContainer} from '@shopify/polaris';
+
 export default class ModalExample extends React.Component {
   state = {
     active: true,
@@ -29,7 +29,7 @@ export default class ModalExample extends React.Component {
           <Modal.Section>
             <TextContainer>
               <p>
-              El tipo de envio es la forma en la que se enviará tu producto y lo que se le cobrará a tu cliente,
+              El tipo de envío es la forma en la que se enviará tu producto y lo que se le cobrará a tu cliente,
               por lo cual es importante asignarle un valor, vayamos a hacerlo.
               </p>
             </TextContainer>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, Label, Select, Tabs,List,Button,Thumbnail} from '@shopify/polaris';
+import {Card, Tabs,Button} from '@shopify/polaris';
 import Ordenes2 from './Ordenes2.js';
 import Field1 from './Field1.js';
 import Ordenes3 from './Ordenes3.js';

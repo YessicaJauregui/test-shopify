@@ -1,5 +1,5 @@
 import React from 'react';
-import {FooterHelp, Link} from '@shopify/polaris';
+import {FooterHelp} from '@shopify/polaris';
 
 export default class App extends React.Component {
   render() {

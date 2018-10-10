@@ -1,6 +1,6 @@
 import React from 'react';
-import {Button, Modal, TextContainer} from '@shopify/polaris';
-import App from './App.js';
+import { Modal, TextContainer} from '@shopify/polaris';
+
 export default class ModalExample extends React.Component {
   state = {
     active: true,
