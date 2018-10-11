@@ -30,6 +30,8 @@ import Final from './Final.js';
 import Indicacion3 from './Indicacion3.js';
 import {BrowserRouter as Router} from 'react-router-dom';
 import Disable from './Disable.js';
+import Categoria from './Categoria.js';
+import Mensaje from './Mensaje.js';
 
 const columns = [{
   title: 'Subir cambios a Mercado Libre',
@@ -177,6 +179,10 @@ class App extends React.Component {
 
 <div style={{width:'90em',height:'50em',padding:'5em'}}>
 <div style={{padding:'5px'}}>
+<div style={{}}>
+<Mensaje></Mensaje>
+<Categoria></Categoria>
+</div>
       <Final></Final>
       </div>
      <Mensajeriapost></Mensajeriapost>

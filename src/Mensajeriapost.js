@@ -13,7 +13,7 @@ export default class App extends React.Component {
   <Link url="www.google.com">➕</Link>
   </div>
   <div style={{marginLeft:'180px',marginTop:'-20px',fontSize:'20px'}}>
-    <Link url="www.google.mx">💬</Link>
+    <Link url="www.google.com">💬</Link>
     </div>
   </Card>
 
