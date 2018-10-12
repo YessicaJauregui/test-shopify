@@ -13,13 +13,9 @@ export default class OptionListExample extends React.Component {
             this.setState({selected: updated});
           }}
           options={[
-            {value: 'ComElec', label: 'Componentes Electrónicos'},
-            {value: 'Construccion', label: 'Construcción'},
-            {value: 'Herrramientas', label: 'Herramientas'},
-            {value: 'MobiliarioBaños', label: 'Mobiliario para Baños'},
-            {value: 'MueblesCocina', label: 'Muebles para Cocina'},
-            {value: 'PisoParedes', label: 'Pisos Paredes y Aberturas'},
-            {value: 'Otros', label: 'Otros'},
+            {value: 'Garmin', label: 'Garmin'},
+            {value: 'Magallan', label: 'Magallan'},
+            {value: 'OtrasMarcas', label: 'Otras Marcas'},
 
           ]}
           selected={this.state.selected}

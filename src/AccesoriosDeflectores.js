@@ -1,5 +1,8 @@
 import React from 'react';
 import {Card, List, OptionList} from '@shopify/polaris';
+import AccesoriosBateas from './AccesoriosBateas.js';
+import AccesoriosBurreras from './AccesoriosBurreras.js';
+import AccesoriosDeflectores from './AccesoriosDeflectores.js';
 
 export default class OptionListExample extends React.Component {
   state = {selected: []};
@@ -13,13 +16,9 @@ export default class OptionListExample extends React.Component {
             this.setState({selected: updated});
           }}
           options={[
-            {value: 'ComElec', label: 'Componentes Electrónicos'},
-            {value: 'Construccion', label: 'Construcción'},
-            {value: 'Herrramientas', label: 'Herramientas'},
-            {value: 'MobiliarioBaños', label: 'Mobiliario para Baños'},
-            {value: 'MueblesCocina', label: 'Muebles para Cocina'},
-            {value: 'PisoParedes', label: 'Pisos Paredes y Aberturas'},
-            {value: 'Otros', label: 'Otros'},
+            {value: 'DeflectoresCofre', label: 'Delfectores de Cofre'},
+            {value: 'DeflectoresVentana', label: 'Deflectores de Ventana'},
+            {value: 'OtrosDeflectores', label: 'Otros Deflectores'},
 
           ]}
           selected={this.state.selected}

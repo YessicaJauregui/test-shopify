@@ -1,5 +1,10 @@
 import React from 'react';
 import {Card, List, OptionList} from '@shopify/polaris';
+import AccesoriosAuto from './AccesoriosAuto.js';
+import AccesoriosCuatrimotos from './AccesoriosCuatrimotos.js';
+import Herramientas from './Herramientas.js';
+import NavegadoresGPS from './NavegadoresGPS.js';
+
 
 export default class OptionListExample extends React.Component {
   state = {selected: []};
